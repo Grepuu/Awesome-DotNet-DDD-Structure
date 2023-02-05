@@ -22,7 +22,6 @@
 
     <ItemGroup>
       <Folder Include="Areas\Articles\Models\Enums" />
-      <Folder Include="Areas\Articles\Repositories" />
     </ItemGroup>
 
     <ItemGroup>

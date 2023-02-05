@@ -1,8 +1,15 @@
-﻿using GrepuuTemplates.NetApp.Web.Areas.Articles.Models.ViewModels;
+﻿using GrepuuTemplates.NetApp.Core;
+using GrepuuTemplates.NetApp.Web.Areas.Articles.Models.ViewModels;
 
 namespace GrepuuTemplates.NetApp.Web.Areas.Articles.Providers;
 
-public class ArticlesPublicProvider : IArticlesPublicProvider
+public interface IArticlesPublicProvider
+{
+    ArticlesPublicListVm PrepareList(bool withArchived);
+    ArticlesPublicDetailsVm PrepareDetails(Guid id);
+}
+
+public class ArticlesPublicProvider : BaseProvider, IArticlesPublicProvider
 {
     public ArticlesPublicProvider()
     {

@@ -1,8 +1,18 @@
-﻿using GrepuuTemplates.NetApp.Web.Areas.Articles.Models.ViewModels;
+﻿using GrepuuTemplates.NetApp.Core;
+using GrepuuTemplates.NetApp.Web.Areas.Articles.Models.ViewModels;
 
 namespace GrepuuTemplates.NetApp.Web.Areas.Articles.Providers;
 
-public class ArticlesManagementProvider : IArticlesManagementProvider
+public interface IArticlesManagementProvider
+{
+    ArticlesManagementListVm PrepareListVm(bool withArchived);
+    ArticlesManagementDetailsVm PrepareDetailsVm(Guid id);
+    ArticlesManagementAddVm PrepareAddVm(Guid id);
+    ArticlesManagementChangeVm PrepareChangeVm(Guid id);
+    ArticlesManagementRemoveVm PrepareRemoveVm(Guid id);
+}
+
+public class ArticlesManagementProvider : BaseProvider, IArticlesManagementProvider
 {
     public ArticlesManagementProvider()
     {

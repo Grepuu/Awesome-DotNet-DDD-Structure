@@ -1,6 +1,6 @@
 ﻿using GrepuuTemplates.NetApp.Web.Areas.Articles.Models.Dtos;
 using GrepuuTemplates.NetApp.Web.Areas.Articles.Providers;
-using GrepuuTemplates.NetApp.Web.Areas.Articles.Services;
+using GrepuuTemplates.NetApp.Web.Areas.Articles.Services.DtoServices;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GrepuuTemplates.NetApp.Web.Areas.Articles.Controllers;
@@ -9,11 +9,11 @@ namespace GrepuuTemplates.NetApp.Web.Areas.Articles.Controllers;
 public class ArticlesManagementController : Controller
 {
     private readonly ArticlesManagementProvider _vmProvider;
-    private readonly IArticlesManagementService _service;
+    private readonly IArticleService _service;
     
     public ArticlesManagementController(
         ArticlesManagementProvider vmProvider,
-        IArticlesManagementService service)
+        IArticleService service)
     {
         _vmProvider = vmProvider;
         _service = service;

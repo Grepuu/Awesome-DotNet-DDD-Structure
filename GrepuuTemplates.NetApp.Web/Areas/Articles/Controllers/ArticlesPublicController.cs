@@ -1,5 +1,4 @@
 ﻿using GrepuuTemplates.NetApp.Web.Areas.Articles.Providers;
-using GrepuuTemplates.NetApp.Web.Areas.Articles.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GrepuuTemplates.NetApp.Web.Areas.Articles.Controllers;
@@ -8,14 +7,11 @@ namespace GrepuuTemplates.NetApp.Web.Areas.Articles.Controllers;
 public class ArticlesPublicController : Controller
 {
     private readonly IArticlesPublicProvider _vmProvider;
-    private readonly IArticlesPublicService _service;
     
     public ArticlesPublicController(
-        IArticlesPublicProvider vmProvider, 
-        IArticlesPublicService service)
+        IArticlesPublicProvider vmProvider)
     {
         _vmProvider = vmProvider;
-        _service = service;
     }
     
     /// <summary>
