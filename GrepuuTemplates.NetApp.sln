@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrepuuTemplates.NetApp.Web", "GrepuuTemplates.NetApp.Web\GrepuuTemplates.NetApp.Web.csproj", "{F77359CF-44AF-4A38-B96C-E90B8A8B7B96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrepuuTemplates.NetApp.Core", "GrepuuTemplates.NetApp.Core\GrepuuTemplates.NetApp.Core.csproj", "{46EC430F-1587-4233-B046-10640FF7FFA9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F77359CF-44AF-4A38-B96C-E90B8A8B7B96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F77359CF-44AF-4A38-B96C-E90B8A8B7B96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F77359CF-44AF-4A38-B96C-E90B8A8B7B96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F77359CF-44AF-4A38-B96C-E90B8A8B7B96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46EC430F-1587-4233-B046-10640FF7FFA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46EC430F-1587-4233-B046-10640FF7FFA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46EC430F-1587-4233-B046-10640FF7FFA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46EC430F-1587-4233-B046-10640FF7FFA9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
