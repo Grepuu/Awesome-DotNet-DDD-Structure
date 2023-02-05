@@ -1,4 +1,5 @@
 using GrepuuTemplates.NetApp.Web.Areas.Articles.Providers;
+using GrepuuTemplates.NetApp.Web.Areas.Articles.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using GrepuuTemplates.NetApp.Web.Data;
@@ -30,6 +31,12 @@ builder.Services
 builder.Services.AddTransient<IArticlesPublicProvider, ArticlesPublicProvider>();
 builder.Services.AddTransient<IArticlesManagementProvider, ArticlesManagementProvider>();
 
+builder.Services.AddTransient<IArticlesPublicService, ArticlesPublicService>();
+builder.Services.AddTransient<IArticlesManagementService, ArticlesManagementService>();
+
+builder.Services.AddTransient<IArticlesPublicValidator, ArticlesPublicValidator>();
+builder.Services.AddTransient<IArticlesManagementValidator, ArticlesManagementValidator>();
+
 
 
 var app = builder.Build();
@@ -56,6 +63,7 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
 app.MapRazorPages();
 
 app.Run();

@@ -5,5 +5,5 @@ namespace GrepuuTemplates.NetApp.Web.Areas.Articles.Providers;
 public interface IArticlesPublicProvider
 {
     ArticlesPublicListVm PrepareList(bool withArchived);
-    ArticlesPublicDetailsVm PrepareDetails(int id);
+    ArticlesPublicDetailsVm PrepareDetails(Guid id);
 }

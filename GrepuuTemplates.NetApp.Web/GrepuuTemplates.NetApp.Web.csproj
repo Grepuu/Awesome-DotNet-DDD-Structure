@@ -21,11 +21,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Areas\Articles\Models\Dtos" />
-      <Folder Include="Areas\Articles\Models\Entities" />
       <Folder Include="Areas\Articles\Models\Enums" />
       <Folder Include="Areas\Articles\Repositories" />
-      <Folder Include="Areas\Articles\Services" />
     </ItemGroup>
 
     <ItemGroup>

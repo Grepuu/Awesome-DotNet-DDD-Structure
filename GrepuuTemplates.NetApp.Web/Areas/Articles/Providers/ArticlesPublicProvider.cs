@@ -14,7 +14,7 @@ public class ArticlesPublicProvider : IArticlesPublicProvider
         return new ArticlesPublicListVm();
     }
 
-    public ArticlesPublicDetailsVm PrepareDetails(int id)
+    public ArticlesPublicDetailsVm PrepareDetails(Guid id)
     {
         return new ArticlesPublicDetailsVm();
     }

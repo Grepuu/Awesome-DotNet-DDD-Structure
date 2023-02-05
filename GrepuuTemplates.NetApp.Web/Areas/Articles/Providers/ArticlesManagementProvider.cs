@@ -14,22 +14,22 @@ public class ArticlesManagementProvider : IArticlesManagementProvider
         return new ArticlesManagementListVm();
     }
 
-    public ArticlesManagementDetailsVm PrepareDetailsVm(int id)
+    public ArticlesManagementDetailsVm PrepareDetailsVm(Guid id)
     {
         return new ArticlesManagementDetailsVm();
     }
 
-    public ArticlesManagementAddVm PrepareAddVm(int id)
+    public ArticlesManagementAddVm PrepareAddVm(Guid id)
     {
         return new ArticlesManagementAddVm();
     }
 
-    public ArticlesManagementChangeVm PrepareChangeVm(int id)
+    public ArticlesManagementChangeVm PrepareChangeVm(Guid id)
     {
         return new ArticlesManagementChangeVm();
     }
 
-    public ArticlesManagementRemoveVm PrepareRemoveVm(int id)
+    public ArticlesManagementRemoveVm PrepareRemoveVm(Guid id)
     {
         return new ArticlesManagementRemoveVm();
     }
